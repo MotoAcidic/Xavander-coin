@@ -195,7 +195,7 @@ RES_ICONS = \
   qt/res/icons/bitcoin_testnet.ico \
   qt/res/icons/bitcoin_testnet.png \
 
-  qt/res/icons/defaultadd.png \
+  qt/res/icons/default/add.png \
   qt/res/icons/default/address-book.png \
   qt/res/icons/default/browse.png \
   qt/res/icons/default/clock1.png \
