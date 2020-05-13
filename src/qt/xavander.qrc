@@ -1,6 +1,9 @@
 <!DOCTYPE RCC><RCC version="1.0">
+  <qresource prefix="/icons">
+        <file alias="bitcoin">res/icons/bitcoin.png</file>
+        <file alias="bitcoin_testnet">res/icons/bitcoin_testnet.png</file>
+  </qresource>
     <qresource prefix="/icons/default">
-        <file alias="bitcoin">res/icons/default/bitcoin.png</file>
         <file alias="address-book">res/icons/default/address-book.png</file>
         <file alias="quit">res/icons/default/quit.png</file>
         <file alias="send">res/icons/default/send.png</file>
@@ -26,7 +29,6 @@
         <file alias="editpaste">res/icons/default/editpaste.png</file>
         <file alias="editcopy">res/icons/default/editcopy.png</file>
         <file alias="add">res/icons/default/add.png</file>
-        <file alias="bitcoin_testnet">res/icons/default/bitcoin_testnet.png</file>
         <file alias="edit">res/icons/default/edit.png</file>
         <file alias="history">res/icons/default/history.png</file>
         <file alias="overview">res/icons/default/overview.png</file>
@@ -55,7 +57,6 @@
         <file alias="staking_inactive">res/icons/default/staking_inactive.png</file>
     </qresource>
   <qresource prefix="/icons/puzzle">
-    <file alias="bitcoin">res/icons/puzzle/bitcoin.png</file>
     <file alias="address-book">res/icons/puzzle/address-book.png</file>
     <file alias="quit">res/icons/puzzle/quit.png</file>
     <file alias="send">res/icons/puzzle/send.png</file>
@@ -81,7 +82,6 @@
     <file alias="editpaste">res/icons/puzzle/editpaste.png</file>
     <file alias="editcopy">res/icons/puzzle/editcopy.png</file>
     <file alias="add">res/icons/puzzle/add.png</file>
-    <file alias="bitcoin_testnet">res/icons/puzzle/bitcoin_testnet.png</file>
     <file alias="edit">res/icons/puzzle/edit.png</file>
     <file alias="history">res/icons/puzzle/history.png</file>
     <file alias="overview">res/icons/puzzle/overview.png</file>

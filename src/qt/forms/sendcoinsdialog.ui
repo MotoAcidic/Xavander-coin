@@ -1316,7 +1316,7 @@
        </property>
        <property name="icon">
         <iconset resource="../xavander.qrc">
-         <normaloff>:/icons/send</normaloff>:/icons/send</iconset>
+         <normaloff>:/icons/default/send</normaloff>:/icons/default/send</iconset>
        </property>
        <property name="autoDefault">
         <bool>false</bool>
@@ -1342,7 +1342,7 @@
        </property>
        <property name="icon">
         <iconset resource="../xavander.qrc">
-         <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
+         <normaloff>:/icons/default/remove</normaloff>:/icons/default/remove</iconset>
        </property>
        <property name="autoDefault">
         <bool>false</bool>
@@ -1359,7 +1359,7 @@
        </property>
        <property name="icon">
         <iconset resource="../xavander.qrc">
-         <normaloff>:/icons/add</normaloff>:/icons/add</iconset>
+         <normaloff>:/icons/default/add</normaloff>:/icons/default/add</iconset>
        </property>
        <property name="autoDefault">
         <bool>false</bool>

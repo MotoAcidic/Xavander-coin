@@ -28,7 +28,7 @@
       </sizepolicy>
      </property>
      <property name="pixmap">
-      <pixmap resource="../xavander.qrc">:/images/about</pixmap>
+      <pixmap resource="../xavander.qrc">:/images/default/about</pixmap>
      </property>
     </widget>
    </item>

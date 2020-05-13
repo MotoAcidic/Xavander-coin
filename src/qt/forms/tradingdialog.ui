@@ -1568,7 +1568,7 @@
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>:/images/bittrex</pixmap>
+      <pixmap>:/images/default/bittrex</pixmap>
      </property>
     </widget>
    </widget>
@@ -2712,7 +2712,7 @@
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>:/images/bittrex</pixmap>
+      <pixmap>:/images/default/bittrex</pixmap>
      </property>
     </widget>
    </widget>
@@ -3050,7 +3050,7 @@
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>:/images/bittrex</pixmap>
+      <pixmap>:/images/default/bittrex</pixmap>
      </property>
     </widget>
     <widget class="QWidget" name="widgetConversion" native="true">
@@ -3206,7 +3206,7 @@
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap resource="../xavander.qrc">:/icons/transaction_1</pixmap>
+       <pixmap resource="../xavander.qrc">:/icons/default/transaction_1</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -3237,7 +3237,7 @@
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>:/images/bittrex</pixmap>
+      <pixmap>:/images/default/bittrex</pixmap>
      </property>
     </widget>
     <widget class="QPushButton" name="UpdateKeys">

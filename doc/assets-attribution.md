@@ -6,7 +6,7 @@ The following is a list of assets used in the bitcoin source and their proper at
 * License: MIT
 
 ### Assets Used
-	src/qt/res/icons/clock*.png, src/qt/res/icons/tx*.png,
+	src/qt/res/icons/default/clock*.png, src/qt/res/icons/default/tx*.png,
 	src/qt/res/src/clock_green.svg, src/qt/res/src/clock1.svg,
 	src/qt/res/src/clock2.svg, src/qt/res/src/clock3.svg,
 	src/qt/res/src/clock4.svg, src/qt/res/src/clock5.svg,
@@ -22,11 +22,11 @@ The following is a list of assets used in the bitcoin source and their proper at
 * Site: [http://www.icon-king.com/projects/nuvola](http://www.icon-king.com/projects/nuvola)
 
 ### Assets Used
-	src/qt/res/icons/address-book.png, src/qt/res/icons/export.png,
-	src/qt/res/icons/history.png, src/qt/res/icons/key.png,
-	src/qt/res/icons/lock_*.png, src/qt/res/icons/overview.png,
-	src/qt/res/icons/receive.png, src/qt/res/icons/send.png,
-	src/qt/res/icons/synced.png, src/qt/res/icons/filesave.png
+	src/qt/res/icons/default/address-book.png, src/qt/res/icons/default/export.png,
+	src/qt/res/icons/default/history.png, src/qt/res/icons/default/key.png,
+	src/qt/res/icons/default/lock_*.png, src/qt/res/icons/default/overview.png,
+	src/qt/res/icons/default/receive.png, src/qt/res/icons/default/send.png,
+	src/qt/res/icons/default/synced.png, src/qt/res/icons/default/filesave.png
 
 schollidesign
 -----------------------
@@ -38,7 +38,7 @@ schollidesign
 * Site: [http://findicons.com/icon/93743/blocks_gnome_netstatus_0](http://findicons.com/icon/93743/blocks_gnome_netstatus_0)
 
 ### Assets Used
-	src/qt/res/icons/connect*.png
+	src/qt/res/icons/default/connect*.png
 
 md2k7
 -----------------------
@@ -50,7 +50,7 @@ md2k7
 * Site: [https://bitcointalk.org/index.php?topic=15276.0](https://bitcointalk.org/index.php?topic=15276.0)
 
 ### Assets Used
-	src/qt/res/icons/transaction*.png
+	src/qt/res/icons/default/transaction*.png
 
 [Everaldo.com](http://www.everaldo.com)
 -----------------------
@@ -61,10 +61,10 @@ md2k7
 * License: LGPL
 
 ### Assets Used
-	src/qt/res/icons/configure.png, src/qt/res/icons/quit.png,
-	src/qt/res/icons/editcopy.png, src/qt/res/icons/editpaste.png,
-	src/qt/res/icons/add.png, src/qt/res/icons/edit.png,
-	src/qt/res/icons/remove.png (edited)
+	src/qt/res/icons/default/configure.png, src/qt/res/icons/default/quit.png,
+	src/qt/res/icons/default/editcopy.png, src/qt/res/icons/default/editpaste.png,
+	src/qt/res/icons/default/add.png, src/qt/res/icons/default/edit.png,
+	src/qt/res/icons/default/remove.png (edited)
 
 Everaldo (Everaldo Coelho)
 -----------------------
@@ -87,7 +87,7 @@ Everaldo (Everaldo Coelho)
 * Site: [http://techbase.kde.org/Projects/Oxygen](http://techbase.kde.org/Projects/Oxygen)
 
 ### Assets Used
-	src/qt/res/icons/debugwindow.png
+	src/qt/res/icons/default/debugwindow.png
 
 Jonas Schnelli
 -----------------------
@@ -100,4 +100,4 @@ Jonas Schnelli
 	src/qt/res/icons/bitcoin.icns, src/qt/res/src/bitcoin.svg,
 	src/qt/res/src/bitcoin.ico, src/qt/res/src/bitcoin.png,
 	src/qt/res/src/bitcoin_testnet.png, docs/bitcoin_logo_doxygen.png,
-	src/qt/res/images/splash.png, src/qt/res/images/splash_testnet.png
+	src/qt/res/images/default/splash.png, src/qt/res/images/default/splash_testnet.png

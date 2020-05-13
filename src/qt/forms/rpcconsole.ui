@@ -424,7 +424,7 @@
            </property>
            <property name="icon">
             <iconset resource="../xavander.qrc">
-             <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
+             <normaloff>:/icons/default/remove</normaloff>:/icons/default/remove</iconset>
            </property>
            <property name="shortcut">
             <string notr="true">Ctrl+L</string>
