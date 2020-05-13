@@ -571,7 +571,7 @@ bool CMasternodeBroadcast::CheckInputsAndAdd(int& nDoS)
 
     CValidationState state;
     CMutableTransaction tx = CMutableTransaction();
-    CTxOut vout = CTxOut(((GetCurrentCollateral() - 0.01) * COIN, obfuScationPool.collateralPubKey);
+    CTxOut vout = CTxOut((GetCurrentCollateral() - 0.01) * COIN, obfuScationPool.collateralPubKey);
     tx.vin.push_back(vin);
     tx.vout.push_back(vout);
 
