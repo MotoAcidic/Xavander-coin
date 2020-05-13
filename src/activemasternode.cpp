@@ -472,7 +472,7 @@ vector<COutput> CActiveMasternode::SelectCoinsMasternode()
 
     // Filter
     BOOST_FOREACH (const COutput& out, vCoins) {
-        if (out.tx->vout[out.i].nValue == Params().GetCurrentCollateral() * COIN) {
+        if (out.tx->vout[out.i].nValue == CollateralRequired() * COIN) {
             filteredCoins.push_back(out);
         }
     }
