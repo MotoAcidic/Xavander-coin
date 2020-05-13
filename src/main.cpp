@@ -2103,9 +2103,9 @@ bool ReadBlockFromDisk(CBlock& block, const CBlockIndex* pindex)
     return true;
 }
 
-CAmount GetCurrentCollateral(int nHeight)
+CAmount GetCurrentCollateral()
 {
-    if (ActiveProtocol() >= COLLATERAL_FORK_VERSION && nHeight >= COLLATERAL_FORK_BLOCK)
+    if (ActiveProtocol() >= COLLATERAL_FORK_VERSION && chainActive.Height() >= COLLATERAL_FORK_BLOCK)
         return Params().MasternodeCollateralAmtNew();
     else
         return Params().MasternodeCollateralAmt();
