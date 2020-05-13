@@ -58,10 +58,10 @@ const struct {
     const char* url;
     const char* source;
 } ICON_MAPPING[] = {
-    {"cmd-request", ":/icons/tx_input"},
-    {"cmd-reply", ":/icons/tx_output"},
-    {"cmd-error", ":/icons/tx_output"},
-    {"misc", ":/icons/tx_inout"},
+    {"cmd-request", ":/icons/default/tx_input"},
+    {"cmd-reply", ":/icons/default/tx_output"},
+    {"cmd-error", ":/icons/default/tx_output"},
+    {"misc", ":/icons/default/tx_inout"},
     {NULL, NULL}};
 
 /* Object for executing console RPC commands in a separate thread.
@@ -228,7 +228,7 @@ RPCConsole::RPCConsole(QWidget* parent) : QDialog(parent),
     GUIUtil::restoreWindowGeometry("nRPCConsoleWindow", this->size(), this);
 
 #ifndef Q_OS_MAC
-    ui->openDebugLogfileButton->setIcon(QIcon(":/icons/export"));
+    ui->openDebugLogfileButton->setIcon(QIcon(":/icons/default/export"));
 #endif
 
     // Install event filter for up and down arrow
