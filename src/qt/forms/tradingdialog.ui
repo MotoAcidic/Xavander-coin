@@ -444,10 +444,7 @@
      <property name="text">
       <string>Buy XAVANDER</string>
      </property>
-     <property name="icon">
-      <iconset resource="../xavander.qrc">
-       <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
-     </property>
+
     </widget>
     <widget class="QLabel" name="label_3">
      <property name="geometry">
@@ -1753,10 +1750,7 @@
      <property name="text">
       <string>Sell XAVANDER</string>
      </property>
-     <property name="icon">
-      <iconset resource="../xavander">
-       <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
-     </property>
+
     </widget>
     <widget class="QWidget" name="layoutWidget3">
      <property name="geometry">
@@ -2943,10 +2937,7 @@
      <property name="text">
       <string>Generate Xavander Deposit Address</string>
      </property>
-     <property name="icon">
-      <iconset resource="../xavander.qrc">
-       <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
-     </property>
+
     </widget>
     <widget class="QLabel" name="DepositAddressLabel">
      <property name="geometry">
@@ -3252,10 +3243,7 @@
      <property name="text">
       <string>Update API Keys</string>
      </property>
-     <property name="icon">
-      <iconset resource="../xavander.qrc">
-       <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
-     </property>
+
     </widget>
     <widget class="QLabel" name="label_2">
      <property name="geometry">

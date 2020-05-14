@@ -164,11 +164,7 @@
                       <property name="text">
                         <string/>
                       </property>
-                      <property name="icon">
-                        <iconset resource="../xavander.qrc">
-                          <normaloff>:/icons/" + theme + "/address-book</normaloff>:/icons/" + theme + "/address-book
-                        </iconset>
-                      </property>
+
                       <property name="shortcut">
                         <string>Alt+A</string>
                       </property>

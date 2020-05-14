@@ -96,10 +96,7 @@
        <property name="text">
         <string>&amp;New</string>
        </property>
-       <property name="icon">
-        <iconset resource="../xavander.qrc">
-         <normaloff>:/icons/" + theme + "/add</normaloff>:/icons/" + theme + "/add</iconset>
-       </property>
+
        <property name="autoDefault">
         <bool>false</bool>
        </property>
@@ -113,10 +110,7 @@
        <property name="text">
         <string>&amp;Copy</string>
        </property>
-       <property name="icon">
-        <iconset resource="../xavander.qrc">
-         <normaloff>:/icons/" + theme + "/editcopy</normaloff>:/icons/" + theme + "/editcopy</iconset>
-       </property>
+
        <property name="autoDefault">
         <bool>false</bool>
        </property>
@@ -130,10 +124,7 @@
        <property name="text">
         <string>&amp;Delete</string>
        </property>
-       <property name="icon">
-        <iconset resource="../xavander.qrc">
-         <normaloff>:/icons/" + theme + "/remove</normaloff>:/icons/" + theme + "/remove</iconset>
-       </property>
+
        <property name="autoDefault">
         <bool>false</bool>
        </property>
@@ -160,10 +151,7 @@
        <property name="text">
         <string>&amp;Export</string>
        </property>
-       <property name="icon">
-        <iconset resource="../xavander.qrc">
-         <normaloff>:/icons/" + theme + "/export</normaloff>:/icons/" + theme + "/export</iconset>
-       </property>
+
        <property name="autoDefault">
         <bool>false</bool>
        </property>

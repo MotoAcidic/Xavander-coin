@@ -99,10 +99,7 @@ QFrame &gt; QLabel{background-color:#f2f0f0;}</string>
            <property name="text">
             <string>&amp;Add Address / Key</string>
            </property>
-           <property name="icon">
-            <iconset resource="../xavander.qrc">
-             <normaloff>:/icons/" + theme + "/add</normaloff>:/icons/" + theme + "/add</iconset>
-           </property>
+
            <property name="autoDefault">
             <bool>false</bool>
            </property>
@@ -196,10 +193,7 @@ QFrame &gt; QLabel{background-color:#f2f0f0;}</string>
            <property name="text">
             <string>C&amp;reate</string>
            </property>
-           <property name="icon">
-            <iconset resource="../xavander.qrc">
-             <normaloff>:/icons/" + theme + "/filesave</normaloff>:/icons/" + theme + "/filesave</iconset>
-           </property>
+
            <property name="autoDefault">
             <bool>false</bool>
            </property>
@@ -270,10 +264,7 @@ Please be patient after clicking import.</string>
            <property name="text">
             <string>&amp;Import Redeem</string>
            </property>
-           <property name="icon">
-            <iconset resource="../xavander.qrc">
-             <normaloff>:/icons/" + theme + "/receiving_addresses</normaloff>:/icons/" + theme + "/receiving_addresses</iconset>
-           </property>
+
           </widget>
          </item>
          <item>
@@ -376,10 +367,7 @@ Please be patient after clicking import.</string>
                <property name="text">
                 <string>Add a Raw Input</string>
                </property>
-               <property name="icon">
-                <iconset resource="../xavander.qrc">
-                 <normaloff>:/css/default</normaloff>:/css/default</iconset>
-               </property>
+
               </widget>
              </item>
             </layout>
@@ -448,10 +436,7 @@ Please be patient after clicking import.</string>
                <property name="text">
                 <string>Add &amp;Destination</string>
                </property>
-               <property name="icon">
-                <iconset resource="../xavander.qrc">
-                 <normaloff>:/icons/" + theme + "/add</normaloff>:/icons/" + theme + "/add</iconset>
-               </property>
+
               </widget>
              </item>
              <item>
@@ -532,10 +517,7 @@ Please be patient after clicking import.</string>
                <property name="text">
                 <string>Cr&amp;eate</string>
                </property>
-               <property name="icon">
-                <iconset resource="../xavander.qrc">
-                 <normaloff>:/icons/" + theme + "/export</normaloff>:/icons/" + theme + "/export</iconset>
-               </property>
+
                <property name="autoDefault">
                 <bool>false</bool>
                </property>
@@ -657,10 +639,7 @@ txScrollArea:{
                <property name="text">
                 <string>S&amp;ign</string>
                </property>
-               <property name="icon">
-                <iconset resource="../xavander.qrc">
-                 <normaloff>:/icons/" + theme + "/edit</normaloff>:/icons/" + theme + "/edit</iconset>
-               </property>
+
                <property name="autoDefault">
                 <bool>false</bool>
                </property>
@@ -689,10 +668,7 @@ txScrollArea:{
                <property name="text">
                 <string>Co&amp;mmit</string>
                </property>
-               <property name="icon">
-                <iconset resource="../xavander.qrc">
-                 <normaloff>:/icons/" + theme + "/send</normaloff>:/icons/" + theme + "/send</iconset>
-               </property>
+
                <property name="autoDefault">
                 <bool>true</bool>
                </property>
@@ -714,10 +690,7 @@ txScrollArea:{
                  <property name="text">
                   <string>Add Private &amp;Key</string>
                  </property>
-                 <property name="icon">
-                  <iconset resource="../xavander.qrc">
-                   <normaloff>:/icons/" + theme + "/add</normaloff>:/icons/" + theme + "/add</iconset>
-                 </property>
+
                 </widget>
                </item>
                <item>

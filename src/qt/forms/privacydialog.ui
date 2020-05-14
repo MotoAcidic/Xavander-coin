@@ -707,10 +707,7 @@ zXAVANDER are mature when they have more than 20 confirmations AND more than 1 m
                    <property name="text">
                     <string/>
                    </property>
-                   <property name="icon">
-                    <iconset resource="../xavander.qrc">
-                     <normaloff>:/icons/" + theme + "/address-book</normaloff>:/icons/" + theme + "/address-book</iconset>
-                   </property>
+
                    <property name="shortcut">
                     <string>Alt+A</string>
                    </property>
@@ -724,10 +721,7 @@ zXAVANDER are mature when they have more than 20 confirmations AND more than 1 m
                    <property name="text">
                     <string/>
                    </property>
-                   <property name="icon">
-                    <iconset resource="../xavander.qrc">
-                     <normaloff>:/icons/" + theme + "/editpaste</normaloff>:/icons/" + theme + "/editpaste</iconset>
-                   </property>
+
                    <property name="shortcut">
                     <string>Alt+P</string>
                    </property>

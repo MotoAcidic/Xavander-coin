@@ -1314,10 +1314,7 @@
        <property name="text">
         <string>S&amp;end</string>
        </property>
-       <property name="icon">
-        <iconset resource="../xavander.qrc">
-         <normaloff>:/icons/" + theme + "/send</normaloff>:/icons/" + theme + "/send</iconset>
-       </property>
+
        <property name="autoDefault">
         <bool>false</bool>
        </property>
@@ -1340,10 +1337,7 @@
        <property name="text">
         <string>Clear &amp;All</string>
        </property>
-       <property name="icon">
-        <iconset resource="../xavander.qrc">
-         <normaloff>:/icons/" + theme + "/remove</normaloff>:/icons/" + theme + "/remove</iconset>
-       </property>
+
        <property name="autoDefault">
         <bool>false</bool>
        </property>
@@ -1357,10 +1351,7 @@
        <property name="text">
         <string>Add &amp;Recipient</string>
        </property>
-       <property name="icon">
-        <iconset resource="../xavander.qrc">
-         <normaloff>:/icons/" + theme + "/add</normaloff>:/icons/" + theme + "/add</iconset>
-       </property>
+
        <property name="autoDefault">
         <bool>false</bool>
        </property>
