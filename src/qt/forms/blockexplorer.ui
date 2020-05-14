@@ -33,7 +33,7 @@
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>:/icons/back</normaloff>:/icons/back</iconset>
+          <normaloff>:/icons/" + theme + "/back</normaloff>:/icons/" + theme + "/back</iconset>
         </property>
         <property name="flat">
          <bool>false</bool>
@@ -47,7 +47,7 @@
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>:/icons/forward</normaloff>:/icons/forward</iconset>
+          <normaloff>:/icons/" + theme + "/forward</normaloff>:/icons/" + theme + "/forward</iconset>
         </property>
        </widget>
       </item>

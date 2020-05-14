@@ -142,7 +142,7 @@
             </property>
             <property name="icon">
              <iconset resource="../xavander.qrc">
-              <normaloff>:/icons/receiving_addresses</normaloff>:/icons/receiving_addresses</iconset>
+              <normaloff>:/icons/" + theme + "/receiving_addresses</normaloff>:/icons/" + theme + "/receiving_addresses</iconset>
             </property>
            </widget>
           </item>
@@ -162,7 +162,7 @@
             </property>
             <property name="icon">
              <iconset resource="../xavander.qrc">
-              <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
+              <normaloff>:/icons/" + theme + "/remove</normaloff>:/icons/" + theme + "/remove</iconset>
             </property>
             <property name="autoDefault">
              <bool>false</bool>
@@ -302,7 +302,7 @@
           </property>
           <property name="icon">
            <iconset resource="../xavander.qrc">
-            <normaloff>:/icons/edit</normaloff>:/icons/edit</iconset>
+            <normaloff>:/icons/" + theme + "/edit</normaloff>:/icons/" + theme + "/edit</iconset>
           </property>
           <property name="autoDefault">
            <bool>false</bool>
@@ -322,7 +322,7 @@
           </property>
           <property name="icon">
            <iconset resource="../xavander.qrc">
-            <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
+            <normaloff>:/icons/" + theme + "/remove</normaloff>:/icons/" + theme + "/remove</iconset>
           </property>
           <property name="autoDefault">
            <bool>false</bool>

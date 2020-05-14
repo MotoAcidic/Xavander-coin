@@ -65,7 +65,7 @@
         </property>
         <property name="icon">
          <iconset resource="../xavander.qrc">
-          <normaloff>:/icons/address-book</normaloff>:/icons/address-book</iconset>
+          <normaloff>:/icons/" + theme + "/address-book</normaloff>:/icons/" + theme + "/address-book</iconset>
         </property>
         <property name="shortcut">
          <string>Alt+A</string>
@@ -82,7 +82,7 @@
         </property>
         <property name="icon">
          <iconset resource="../xavander.qrc">
-          <normaloff>:/icons/editpaste</normaloff>:/icons/editpaste</iconset>
+          <normaloff>:/icons/" + theme + "/editpaste</normaloff>:/icons/" + theme + "/editpaste</iconset>
         </property>
         <property name="shortcut">
          <string>Alt+P</string>
@@ -99,7 +99,7 @@
         </property>
         <property name="icon">
          <iconset resource="../xavander.qrc">
-          <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
+          <normaloff>:/icons/" + theme + "/remove</normaloff>:/icons/" + theme + "/remove</iconset>
         </property>
        </widget>
       </item>
@@ -623,7 +623,7 @@
         </property>
         <property name="icon">
          <iconset resource="../xavander.qrc">
-          <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
+          <normaloff>:/icons/" + theme + "/remove</normaloff>:/icons/" + theme + "/remove</iconset>
         </property>
        </widget>
       </item>
@@ -1159,7 +1159,7 @@
         </property>
         <property name="icon">
          <iconset resource="../xavander.qrc">
-          <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
+          <normaloff>:/icons/" + theme + "/remove</normaloff>:/icons/" + theme + "/remove</iconset>
         </property>
        </widget>
       </item>

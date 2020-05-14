@@ -166,7 +166,7 @@
                       </property>
                       <property name="icon">
                         <iconset resource="../xavander.qrc">
-                          <normaloff>:/icons/address-book</normaloff>:/icons/address-book
+                          <normaloff>:/icons/" + theme + "/address-book</normaloff>:/icons/" + theme + "/address-book
                         </iconset>
                       </property>
                       <property name="shortcut">
