@@ -54,8 +54,64 @@
         <file alias="staking_active">res/icons/staking_active.png</file>
         <file alias="staking_inactive">res/icons/staking_inactive.png</file>
     </qresource>
-    <qresource prefix="/css">
+
+  <qresource prefix="/icons/puzzle">
+    <file alias="address-book">res/icons/puzzle/address-book.png</file>
+    <file alias="quit">res/icons/puzzle/quit.png</file>
+    <file alias="send">res/icons/puzzle/send.png</file>
+    <file alias="connect_0">res/icons/puzzle/connect0_16.png</file>
+    <file alias="connect_1">res/icons/puzzle/connect1_16.png</file>
+    <file alias="connect_2">res/icons/puzzle/connect2_16.png</file>
+    <file alias="connect_3">res/icons/puzzle/connect3_16.png</file>
+    <file alias="connect_4">res/icons/puzzle/connect4_16.png</file>
+    <file alias="transaction_0">res/icons/puzzle/transaction0.png</file>
+    <file alias="transaction_confirmed">res/icons/puzzle/transaction2.png</file>
+    <file alias="transaction_conflicted">res/icons/puzzle/transaction_conflicted.png</file>
+    <file alias="transaction_1">res/icons/puzzle/clock1.png</file>
+    <file alias="transaction_2">res/icons/puzzle/clock2.png</file>
+    <file alias="transaction_3">res/icons/puzzle/clock3.png</file>
+    <file alias="transaction_4">res/icons/puzzle/clock4.png</file>
+    <file alias="transaction_5">res/icons/puzzle/clock5.png</file>
+    <file alias="eye">res/icons/puzzle/eye.png</file>
+    <file alias="eye_minus">res/icons/puzzle/eye_minus.png</file>
+    <file alias="eye_plus">res/icons/puzzle/eye_plus.png</file>
+    <file alias="options">res/icons/puzzle/configure.png</file>
+    <file alias="receiving_addresses">res/icons/puzzle/receive.png</file>
+    <file alias="privacy">res/icons/puzzle/privacy.png</file>
+    <file alias="editpaste">res/icons/puzzle/editpaste.png</file>
+    <file alias="editcopy">res/icons/puzzle/editcopy.png</file>
+    <file alias="add">res/icons/puzzle/add.png</file>
+    <file alias="edit">res/icons/puzzle/edit.png</file>
+    <file alias="history">res/icons/puzzle/history.png</file>
+    <file alias="overview">res/icons/puzzle/overview.png</file>
+    <file alias="masternodes">res/icons/puzzle/masternodes.png</file>
+    <file alias="export">res/icons/puzzle/export.png</file>
+    <file alias="synced">res/icons/puzzle/synced.png</file>
+    <file alias="remove">res/icons/puzzle/remove.png</file>
+    <file alias="tx_mined">res/icons/puzzle/tx_mined.png</file>
+    <file alias="tx_input">res/icons/puzzle/tx_input.png</file>
+    <file alias="tx_output">res/icons/puzzle/tx_output.png</file>
+    <file alias="tx_inout">res/icons/puzzle/tx_inout.png</file>
+    <file alias="unit_xavander">res/icons/puzzle/unit_xavander.png</file>
+    <file alias="unit_mxavander">res/icons/puzzle/unit_mxavander.png</file>
+    <file alias="unit_uxavander">res/icons/puzzle/unit_uxavander.png</file>
+    <file alias="unit_txavander">res/icons/puzzle/unit_txavander.png</file>
+    <file alias="unit_tmxavander">res/icons/puzzle/unit_tmxavander.png</file>
+    <file alias="unit_tuxavander">res/icons/puzzle/unit_tuxavander.png</file>
+    <file alias="lock_closed">res/icons/puzzle/lock_closed.png</file>
+    <file alias="lock_open">res/icons/puzzle/lock_open.png</file>
+    <file alias="key">res/icons/puzzle/key.png</file>
+    <file alias="filesave">res/icons/puzzle/filesave.png</file>
+    <file alias="qrcode">res/icons/puzzle/qrcode.png</file>
+    <file alias="debugwindow">res/icons/puzzle/debugwindow.png</file>
+    <file alias="browse">res/icons/puzzle/browse.png</file>
+    <file alias="staking_active">res/icons/puzzle/staking_active.png</file>
+    <file alias="staking_inactive">res/icons/puzzle/staking_inactive.png</file>
+  </qresource>
+
+  <qresource prefix="/css">
         <file alias="default">res/css/default.css</file>
+    <file alias="default">res/css/puzzle.css</file>
     </qresource>
     <qresource prefix="/images">
         <file alias="about">res/images/about.png</file>
@@ -71,7 +127,24 @@
         <file alias="splash">res/images/splash.png</file>
         <file alias="splash_testnet">res/images/splash_testnet.png</file>
     </qresource>
-    <qresource prefix="/movies">
+
+  <qresource prefix="/images/puzzle">
+    <file alias="about">res/images/puzzle/about.png</file>
+    <file alias="xavander_logo_horizontal">res/images/puzzle/xavander_logo_horizontal.png</file>
+    <file alias="downArrow">res/images/puzzle/downArrow.png</file>
+    <file alias="downArrow_small">res/images/puzzle/downArrow_small.png</file>
+    <file alias="upArrow_small">res/images/puzzle/upArrow_small.png</file>
+    <file alias="leftArrow_small">res/images/puzzle/leftArrow_small.png</file>
+    <file alias="rightArrow_small">res/images/puzzle/rightArrow_small.png</file>
+    <file alias="qtreeview_selected">res/images/puzzle/qtreeview_selected.png</file>
+    <file alias="walletFrame_bg">res/images/puzzle/walletFrame_bg.png</file>
+    <file alias="walletFrame">res/images/puzzle/walletFrame.png</file>
+    <file alias="splash">res/images/puzzle/splash.png</file>
+    <file alias="splash_testnet">res/images/puzzle/splash_testnet.png</file>
+  </qresource>
+
+
+  <qresource prefix="/movies">
         <file alias="spinner-000">res/movies/spinner-000.png</file>
         <file alias="spinner-001">res/movies/spinner-001.png</file>
         <file alias="spinner-002">res/movies/spinner-002.png</file>
