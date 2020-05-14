@@ -111,7 +111,7 @@
 
   <qresource prefix="/css">
         <file alias="default">res/css/default.css</file>
-        <file alias="default">res/css/puzzle.css</file>
+        <file alias="puzzle">res/css/puzzle.css</file>
     </qresource>
     <qresource prefix="/images">
         <file alias="about">res/images/about.png</file>
