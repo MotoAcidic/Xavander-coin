@@ -446,7 +446,7 @@
      </property>
      <property name="icon">
       <iconset resource="../xavander.qrc">
-       <normaloff>:/icons/" + theme + "/bitcoin</normaloff>:/icons/" + theme + "/bitcoin</iconset>
+       <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
     <widget class="QLabel" name="label_3">
@@ -1755,7 +1755,7 @@
      </property>
      <property name="icon">
       <iconset resource="../xavander">
-       <normaloff>:/icons/" + theme + "/bitcoin</normaloff>:/icons/" + theme + "/bitcoin</iconset>
+       <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
     <widget class="QWidget" name="layoutWidget3">
@@ -2945,7 +2945,7 @@
      </property>
      <property name="icon">
       <iconset resource="../xavander.qrc">
-       <normaloff>:/icons/" + theme + "/bitcoin</normaloff>:/icons/" + theme + "/bitcoin</iconset>
+       <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
     <widget class="QLabel" name="DepositAddressLabel">
@@ -3254,7 +3254,7 @@
      </property>
      <property name="icon">
       <iconset resource="../xavander.qrc">
-       <normaloff>:/icons/" + theme + "/bitcoin</normaloff>:/icons/" + theme + "/bitcoin</iconset>
+       <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
     <widget class="QLabel" name="label_2">

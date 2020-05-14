@@ -190,63 +190,63 @@ BITCOIN_QT_H = \
   qt/zxavandercontroldialog.h
 
 RES_ICONS = \
-  qt/res/icons/" + theme + "/add.png \
-  qt/res/icons/" + theme + "/address-book.png \
-  qt/res/icons/" + theme + "/bitcoin.ico \
-  qt/res/icons/" + theme + "/bitcoin.png \
-  qt/res/icons/" + theme + "/bitcoin_testnet.ico \
-  qt/res/icons/" + theme + "/bitcoin_testnet.png \
-  qt/res/icons/" + theme + "/browse.png \
-  qt/res/icons/" + theme + "/clock1.png \
-  qt/res/icons/" + theme + "/clock2.png \
-  qt/res/icons/" + theme + "/clock3.png \
-  qt/res/icons/" + theme + "/clock4.png \
-  qt/res/icons/" + theme + "/clock5.png \
-  qt/res/icons/" + theme + "/configure.png \
-  qt/res/icons/" + theme + "/connect0_16.png \
-  qt/res/icons/" + theme + "/connect1_16.png \
-  qt/res/icons/" + theme + "/connect2_16.png \
-  qt/res/icons/" + theme + "/connect3_16.png \
-  qt/res/icons/" + theme + "/connect4_16.png \
-  qt/res/icons/" + theme + "/debugwindow.png \
-  qt/res/icons/" + theme + "/edit.png \
-  qt/res/icons/" + theme + "/editcopy.png \
-  qt/res/icons/" + theme + "/editpaste.png \
-  qt/res/icons/" + theme + "/explorer.png \
-  qt/res/icons/" + theme + "/export.png \
-  qt/res/icons/" + theme + "/eye.png \
-  qt/res/icons/" + theme + "/eye_minus.png \
-  qt/res/icons/" + theme + "/eye_plus.png \
-  qt/res/icons/" + theme + "/filesave.png \
-  qt/res/icons/" + theme + "/history.png \
-  qt/res/icons/" + theme + "/key.png \
-  qt/res/icons/" + theme + "/lock_closed.png \
-  qt/res/icons/" + theme + "/lock_open.png \
-  qt/res/icons/" + theme + "/masternodes.png \
-  qt/res/icons/" + theme + "/overview.png \
-  qt/res/icons/" + theme + "/qrcode.png \
-  qt/res/icons/" + theme + "/quit.png \
-  qt/res/icons/" + theme + "/receive.png \
-  qt/res/icons/" + theme + "/privacy.png \
-  qt/res/icons/" + theme + "/remove.png \
-  qt/res/icons/" + theme + "/send.png \
-  qt/res/icons/" + theme + "/staking_active.png \
-  qt/res/icons/" + theme + "/staking_inactive.png \
-  qt/res/icons/" + theme + "/synced.png \
-  qt/res/icons/" + theme + "/trade.png \
-  qt/res/icons/" + theme + "/transaction0.png \
-  qt/res/icons/" + theme + "/transaction2.png \
-  qt/res/icons/" + theme + "/transaction_conflicted.png \
-  qt/res/icons/" + theme + "/tx_inout.png \
-  qt/res/icons/" + theme + "/tx_input.png \
-  qt/res/icons/" + theme + "/tx_output.png \
-  qt/res/icons/" + theme + "/tx_mined.png \
-  qt/res/icons/" + theme + "/unit_xavander.png \
-  qt/res/icons/" + theme + "/unit_mxavander.png \
-  qt/res/icons/" + theme + "/unit_uxavander.png \
-  qt/res/icons/" + theme + "/unit_txavander.png \
-  qt/res/icons/" + theme + "/unit_tmxavander.png \
-  qt/res/icons/" + theme + "/unit_tuxavander.png
+  qt/res/icons/default/add.png \
+  qt/res/icons/default/address-book.png \
+  qt/res/icons/bitcoin.ico \
+  qt/res/icons/bitcoin.png \
+  qt/res/icons/bitcoin_testnet.ico \
+  qt/res/icons/bitcoin_testnet.png \
+  qt/res/icons/default/browse.png \
+  qt/res/icons/default/clock1.png \
+  qt/res/icons/default/clock2.png \
+  qt/res/icons/default/clock3.png \
+  qt/res/icons/default/clock4.png \
+  qt/res/icons/default/clock5.png \
+  qt/res/icons/default/configure.png \
+  qt/res/icons/default/connect0_16.png \
+  qt/res/icons/default/connect1_16.png \
+  qt/res/icons/default/connect2_16.png \
+  qt/res/icons/default/connect3_16.png \
+  qt/res/icons/default/connect4_16.png \
+  qt/res/icons/default/debugwindow.png \
+  qt/res/icons/default/edit.png \
+  qt/res/icons/default/editcopy.png \
+  qt/res/icons/default/editpaste.png \
+  qt/res/icons/default/explorer.png \
+  qt/res/icons/default/export.png \
+  qt/res/icons/default/eye.png \
+  qt/res/icons/default/eye_minus.png \
+  qt/res/icons/default/eye_plus.png \
+  qt/res/icons/default/filesave.png \
+  qt/res/icons/default/history.png \
+  qt/res/icons/default/key.png \
+  qt/res/icons/default/lock_closed.png \
+  qt/res/icons/default/lock_open.png \
+  qt/res/icons/default/masternodes.png \
+  qt/res/icons/default/overview.png \
+  qt/res/icons/default/qrcode.png \
+  qt/res/icons/default/quit.png \
+  qt/res/icons/default/receive.png \
+  qt/res/icons/default/privacy.png \
+  qt/res/icons/default/remove.png \
+  qt/res/icons/default/send.png \
+  qt/res/icons/default/staking_active.png \
+  qt/res/icons/default/staking_inactive.png \
+  qt/res/icons/default/synced.png \
+  qt/res/icons/default/trade.png \
+  qt/res/icons/default/transaction0.png \
+  qt/res/icons/default/transaction2.png \
+  qt/res/icons/default/transaction_conflicted.png \
+  qt/res/icons/default/tx_inout.png \
+  qt/res/icons/default/tx_input.png \
+  qt/res/icons/default/tx_output.png \
+  qt/res/icons/default/tx_mined.png \
+  qt/res/icons/default/unit_xavander.png \
+  qt/res/icons/default/unit_mxavander.png \
+  qt/res/icons/default/unit_uxavander.png \
+  qt/res/icons/default/unit_txavander.png \
+  qt/res/icons/default/unit_tmxavander.png \
+  qt/res/icons/default/unit_tuxavander.png
 
 BITCOIN_QT_CPP = \
   qt/bitcoinaddressvalidator.cpp \
@@ -313,19 +313,19 @@ BITCOIN_QT_CPP += \
 endif
 
 RES_IMAGES = \
-  qt/res/images/" + theme + "/about.png \
-  qt/res/images/" + theme + "/splash.png \
-  qt/res/images/" + theme + "/splash_testnet.png \
-  qt/res/images/" + theme + "/xavander_logo_horizontal.png \
-  qt/res/images/" + theme + "/downArrow.png \
-  qt/res/images/" + theme + "/downArrow_small.png \
-  qt/res/images/" + theme + "/upArrow_small.png \
-  qt/res/images/" + theme + "/leftArrow_small.png \
-  qt/res/images/" + theme + "/rightArrow_small.png \
-  qt/res/images/" + theme + "/qtreeview_selected.png \
-  qt/res/images/" + theme + "/walletFrame.png \
-  qt/res/images/" + theme + "/walletFrame_bg.png \
-  qt/res/images/" + theme + "/walletFrame_bg.png
+  qt/res/images/default/about.png \
+  qt/res/images/default/splash.png \
+  qt/res/images/default/splash_testnet.png \
+  qt/res/images/default/xavander_logo_horizontal.png \
+  qt/res/images/default/downArrow.png \
+  qt/res/images/default/downArrow_small.png \
+  qt/res/images/default/upArrow_small.png \
+  qt/res/images/default/leftArrow_small.png \
+  qt/res/images/default/rightArrow_small.png \
+  qt/res/images/default/qtreeview_selected.png \
+  qt/res/images/default/walletFrame.png \
+  qt/res/images/default/walletFrame_bg.png \
+  qt/res/images/default/walletFrame_bg.png
 
 RES_CSS = \
   qt/res/css/default.css
