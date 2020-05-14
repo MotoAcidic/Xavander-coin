@@ -287,6 +287,7 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
 {
     QActionGroup* tabGroup = new QActionGroup(this);
 
+    QString theme = GUIUtil::getThemeName();
     overviewAction = new QAction(QIcon(":/icons/" + theme + "/overview"), tr("&Overview"), this);
     overviewAction->setStatusTip(tr("Show general overview of wallet"));
     overviewAction->setToolTip(overviewAction->statusTip());
@@ -851,6 +852,7 @@ void BitcoinGUI::gotoBlockExplorerPage()
 void BitcoinGUI::setNumConnections(int count)
 {
     QString icon;
+    QString theme = GUIUtil::getThemeName();
     switch (count) {
     case 0:
         icon = ":/icons/" + theme + "/connect_0";
@@ -914,9 +916,11 @@ void BitcoinGUI::setNumBlocks(int count)
     tooltip = tr("Processed %n blocks of transaction history.", "", count);
 
     // Set icon state: spinning if catching up, tick otherwise
+    QString theme = GUIUtil::getThemeName();
     //    if(secs < 25*60) // 90*60 for bitcoin but we are 4x times faster
     if (masternodeSync.IsBlockchainSynced()) {
         QString strSyncStatus;
+        
         tooltip = tr("Up to date") + QString(".<br>") + tooltip;
 
         if (masternodeSync.IsSynced()) {
@@ -1140,6 +1144,7 @@ bool BitcoinGUI::eventFilter(QObject* object, QEvent* event)
 
 void BitcoinGUI::setStakingStatus()
 {
+    QString theme = GUIUtil::getThemeName();
     if (pwalletMain)
         fMultiSend = pwalletMain->isMultiSendEnabled();
 
@@ -1168,6 +1173,7 @@ bool BitcoinGUI::handlePaymentRequest(const SendCoinsRecipient& recipient)
 
 void BitcoinGUI::setEncryptionStatus(int status)
 {
+    QString theme = GUIUtil::getThemeName();
     switch (status) {
     case WalletModel::Unencrypted:
         labelEncryptionIcon->hide();
@@ -1340,6 +1346,7 @@ void UnitDisplayStatusBarControl::setOptionsModel(OptionsModel* optionsModel)
 /** When Display Units are changed on OptionsModel it will refresh the display text of the control on the status bar */
 void UnitDisplayStatusBarControl::updateDisplayUnit(int newUnits)
 {
+    QString theme = GUIUtil::getThemeName();
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         setPixmap(QIcon(":/icons/" + theme + "/unit_" + BitcoinUnits::id(newUnits)).pixmap(39, STATUSBAR_ICONSIZE));
     } else {
