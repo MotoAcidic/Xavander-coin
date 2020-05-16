@@ -15,6 +15,7 @@ static const struct {
     const char* titleAddText;
     const char* splashImage;
 } network_styles[] = {
+    QString theme = GUIUtil::getThemeName();
     {"main", QAPP_APP_NAME_DEFAULT, ":/icons/bitcoin", "", ":/images/" + theme + "/splash"},
     {"test", QAPP_APP_NAME_TESTNET, ":/icons/bitcoin_testnet", QT_TRANSLATE_NOOP("SplashScreen", "[testnet]"), ":/images/" + theme + "/splash_testnet"},
     {"regtest", QAPP_APP_NAME_TESTNET, ":/icons/bitcoin_testnet", "[regtest]", ":/images/" + theme + "/splash_testnet"}};
