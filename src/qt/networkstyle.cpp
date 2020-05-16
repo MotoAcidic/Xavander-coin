@@ -15,10 +15,9 @@ static const struct {
     const char* titleAddText;
     const char* splashImage;
 } network_styles[] = {
-    QString theme = GUIUtil::getThemeName();
-    {"main", QAPP_APP_NAME_DEFAULT, ":/icons/bitcoin", "", ":/images/" + theme + "/splash"},
-    {"test", QAPP_APP_NAME_TESTNET, ":/icons/bitcoin_testnet", QT_TRANSLATE_NOOP("SplashScreen", "[testnet]"), ":/images/" + theme + "/splash_testnet"},
-    {"regtest", QAPP_APP_NAME_TESTNET, ":/icons/bitcoin_testnet", "[regtest]", ":/images/" + theme + "/splash_testnet"}};
+{"main", QAPP_APP_NAME_DEFAULT, 0, 0, ""},
+{"test", QAPP_APP_NAME_TESTNET, 190, 20, QT_TRANSLATE_NOOP("SplashScreen", "[testnet]")},
+{"regtest", QAPP_APP_NAME_TESTNET, 160, 30, "[regtest]"}
 static const unsigned network_styles_count = sizeof(network_styles) / sizeof(*network_styles);
 
 // titleAddText needs to be const char* for tr()
