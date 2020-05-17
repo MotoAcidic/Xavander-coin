@@ -10,6 +10,7 @@
 #include "addresstablemodel.h"
 #include "bitcoinunits.h"
 #include "guiutil.h"
+#include "guiutil.h"
 #include "init.h"
 #include "optionsmodel.h"
 #include "walletmodel.h"
@@ -405,6 +406,7 @@ void CoinControlDialog::select_250() //select the first 250 inputs
 void CoinControlDialog::buttonToggleLockClicked()
 {
     QTreeWidgetItem* item;
+    QString theme = GUIUtil::getThemeName();
     // Works in list-mode only
     if (ui->radioListMode->isChecked()) {
         ui->treeWidget->setEnabled(false);
@@ -501,6 +503,7 @@ void CoinControlDialog::copyTransactionHash()
 // context menu action: lock coin
 void CoinControlDialog::lockCoin()
 {
+    QString theme = GUIUtil::getThemeName();
     if (contextMenuItem->checkState(COLUMN_CHECKBOX) == Qt::Checked)
         contextMenuItem->setCheckState(COLUMN_CHECKBOX, Qt::Unchecked);
 
@@ -950,7 +953,7 @@ void CoinControlDialog::updateView()
         return;
 
     bool treeMode = ui->radioTreeMode->isChecked();
-
+    QString theme = GUIUtil::getThemeName();
     ui->treeWidget->clear();
     ui->treeWidget->setEnabled(false); // performance, otherwise updateLabels would be called for every checked checkbox
     ui->treeWidget->setAlternatingRowColors(!treeMode);
