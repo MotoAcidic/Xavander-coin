@@ -1,5 +1,4 @@
 // Copyright (c) 2017 The PIVX developers
-// Copyright (c) 2017-2018 The XDNA Core developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -37,16 +36,6 @@ MultisigDialog::MultisigDialog(QWidget* parent) : QDialog(parent),
                                                   model(0)
 {
     ui->setupUi(this);
-
-    ui->addAddressButton->setIcon(QIcon(GUIUtil::getThemeImage(":/icons/add")));
-    ui->addMultisigButton->setIcon(QIcon(GUIUtil::getThemeImage(":/icons/filesave")));
-    ui->importAddressButton->setIcon(QIcon(GUIUtil::getThemeImage(":/icons/receiving_addresses")));
-    ui->addDestinationButton->setIcon(QIcon(GUIUtil::getThemeImage(":/icons/add")));
-    ui->createButton->setIcon(QIcon(GUIUtil::getThemeImage(":/icons/export")));
-    ui->signButton->setIcon(QIcon(GUIUtil::getThemeImage(":/icons/edit")));
-    ui->commitButton->setIcon(QIcon(GUIUtil::getThemeImage(":/icons/send")));
-    ui->addPrivKeyButton->setIcon(QIcon(GUIUtil::getThemeImage(":/icons/add")));
-
     multisigTx = CMutableTransaction();
 
     //flag to show keyScrollArea on first priv key added
@@ -62,7 +51,7 @@ MultisigDialog::MultisigDialog(QWidget* parent) : QDialog(parent),
     on_addAddressButton_clicked();
     on_addDestinationButton_clicked();
 
-    //    this->setStyleSheet(GUIUtil::loadStyleSheet());
+    this->setStyleSheet(GUIUtil::loadStyleSheet());
 }
 
 MultisigDialog::~MultisigDialog()
@@ -745,7 +734,7 @@ bool MultisigDialog::createRedeemScript(int m, vector<string> vKeys, CScript& re
         for (vector<string>::iterator it = vKeys.begin(); it != vKeys.end(); ++it) {
             string keyString = *it;
 #ifdef ENABLE_WALLET
-            // Case 1: XAVANDER address and we have full public key:
+            // Case 1: Xavander address and we have full public key:
             CBitcoinAddress address(keyString);
             if (pwalletMain && address.IsValid()) {
                 CKeyID keyID;
@@ -839,7 +828,7 @@ void MultisigDialog::on_addAddressButton_clicked()
     QPushButton* addressBookButton = new QPushButton(addressFrame);
     addressBookButton->setObjectName(QStringLiteral("addressBookButton"));
     QIcon icon3;
-    icon3.addFile(GUIUtil::getThemeImage(QStringLiteral(":/icons/address-book")), QSize(), QIcon::Normal, QIcon::Off);
+    icon3.addFile(QStringLiteral(":/icons/address-book"), QSize(), QIcon::Normal, QIcon::Off);
     addressBookButton->setIcon(icon3);
     addressBookButton->setAutoDefault(false);
     connect(addressBookButton, SIGNAL(clicked()), this, SLOT(addressBookButtonReceiving()));
@@ -849,7 +838,7 @@ void MultisigDialog::on_addAddressButton_clicked()
     QPushButton* addressPasteButton = new QPushButton(addressFrame);
     addressPasteButton->setObjectName(QStringLiteral("addressPasteButton"));
     QIcon icon4;
-    icon4.addFile(GUIUtil::getThemeImage(QStringLiteral(":/icons/editpaste")), QSize(), QIcon::Normal, QIcon::Off);
+    icon4.addFile(QStringLiteral(":/icons/editpaste"), QSize(), QIcon::Normal, QIcon::Off);
     addressPasteButton->setIcon(icon4);
     addressPasteButton->setAutoDefault(false);
     connect(addressPasteButton, SIGNAL(clicked()), this, SLOT(pasteText()));
@@ -859,7 +848,7 @@ void MultisigDialog::on_addAddressButton_clicked()
     QPushButton* addressDeleteButton = new QPushButton(addressFrame);
     addressDeleteButton->setObjectName(QStringLiteral("addressDeleteButton"));
     QIcon icon5;
-    icon5.addFile(GUIUtil::getThemeImage(QStringLiteral(":/icons/remove")), QSize(), QIcon::Normal, QIcon::Off);
+    icon5.addFile(QStringLiteral(":/icons/remove"), QSize(), QIcon::Normal, QIcon::Off);
     addressDeleteButton->setIcon(icon5);
     addressDeleteButton->setAutoDefault(false);
     connect(addressDeleteButton, SIGNAL(clicked()), this, SLOT(deleteFrame()));
@@ -929,7 +918,7 @@ void MultisigDialog::on_addInputButton_clicked()
     QPushButton* inputDeleteButton = new QPushButton(txInputFrame);
     inputDeleteButton->setObjectName(QStringLiteral("inputDeleteButton"));
     QIcon icon;
-    icon.addFile(GUIUtil::getThemeImage(QStringLiteral(":/icons/remove")), QSize(), QIcon::Normal, QIcon::Off);
+    icon.addFile(QStringLiteral(":/icons/remove"), QSize(), QIcon::Normal, QIcon::Off);
     inputDeleteButton->setIcon(icon);
     inputDeleteButton->setAutoDefault(false);
     connect(inputDeleteButton, SIGNAL(clicked()), this, SLOT(deleteFrame()));
@@ -981,7 +970,7 @@ void MultisigDialog::on_addDestinationButton_clicked()
     QPushButton* destinationDeleteButton = new QPushButton(destinationFrame);
     destinationDeleteButton->setObjectName(QStringLiteral("destinationDeleteButton"));
     QIcon icon;
-    icon.addFile(GUIUtil::getThemeImage(QStringLiteral(":/icons/remove")), QSize(), QIcon::Normal, QIcon::Off);
+    icon.addFile(QStringLiteral(":/icons/remove"), QSize(), QIcon::Normal, QIcon::Off);
     destinationDeleteButton->setIcon(icon);
     destinationDeleteButton->setAutoDefault(false);
     connect(destinationDeleteButton, SIGNAL(clicked()), this, SLOT(deleteFrame()));
@@ -1027,7 +1016,7 @@ void MultisigDialog::on_addPrivKeyButton_clicked()
     QPushButton* keyDeleteButton = new QPushButton(keyFrame);
     keyDeleteButton->setObjectName(QStringLiteral("keyDeleteButton"));
     QIcon icon;
-    icon.addFile(GUIUtil::getThemeImage(QStringLiteral(":/icons/remove")), QSize(), QIcon::Normal, QIcon::Off);
+    icon.addFile(QStringLiteral(":/icons/remove"), QSize(), QIcon::Normal, QIcon::Off);
     keyDeleteButton->setIcon(icon);
     keyDeleteButton->setAutoDefault(false);
     connect(keyDeleteButton, SIGNAL(clicked()), this, SLOT(deleteFrame()));
