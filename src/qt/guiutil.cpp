@@ -811,16 +811,16 @@ void restoreWindowGeometry(const QString& strSetting, const QSize& defaultSize, 
 QString getThemeName()
 {
     QSettings settings;
-    QString theme = settings.value("theme", "default").toString();
+    QString theme = settings.value("theme", "").toString();
 
-
-    if (theme.operator==("default")) {
-        return image.insert(image.lastIndexOf(QString("/")), QString("/"));
+	if (theme.operator==("default")) {
+        return QString theme = settings.value("theme", "default").toString();
     } else if (theme.operator==("puzzle")) {
-        return image.insert(image.lastIndexOf(QString("/")), QString("/"));
+            return QString theme = settings.value("theme", "puzzle").toString();
     } else {
-        return QString("default");
+            return QString("default");
     }
+
 }
 
 // Open CSS when configured
