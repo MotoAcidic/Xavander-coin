@@ -808,29 +808,33 @@ void restoreWindowGeometry(const QString& strSetting, const QSize& defaultSize, 
 }
 
 // Return name of current UI-theme or default theme if no theme was found
-	QString getThemeName()
-	{
+QString getThemeName()
+{
     QSettings settings;
-    QString theme = settings.value("theme", "").toString();
+    QString theme = settings.value("theme", "default").toString();
 
-    if (!theme.isEmpty()) {
-        return theme;
+
+    if (theme.operator==("default")) {
+        return image.insert(image.lastIndexOf(QString("/")), QString("/"));
+    } else if (theme.operator==("puzzle")) {
+        return image.insert(image.lastIndexOf(QString("/")), QString("/"));
+    } else {
+        return QString("default");
     }
-    return QString("light");
-	}
+}
 
 // Open CSS when configured
-	QString loadStyleSheet()
-	{
+QString loadStyleSheet()
+{
     QString styleSheet;
     QSettings settings;
     QString cssName;
-    QString theme = settings.value("theme", "").toString();
+    QString theme = settings.value("theme", "default").toString();
 
     if (!theme.isEmpty()) {
         cssName = QString(":/css/") + theme;
     } else {
-        cssName = QString(":/css/light");
+        cssName = QString(":/css/default");
         settings.setValue("theme", "default");
     }
 
@@ -840,7 +844,7 @@ void restoreWindowGeometry(const QString& strSetting, const QSize& defaultSize, 
     }
 
     return styleSheet;
-	}
+}
 
 void setClipboard(const QString& str)
 {
