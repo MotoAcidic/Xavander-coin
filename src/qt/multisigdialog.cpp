@@ -971,7 +971,7 @@ void MultisigDialog::on_addDestinationButton_clicked()
     QPushButton* destinationDeleteButton = new QPushButton(destinationFrame);
     destinationDeleteButton->setObjectName(QStringLiteral("destinationDeleteButton"));
     QIcon icon;
-    icon.addFile(QStringLiteral(":/icons/" + theme + "/remove"), QSize(), QIcon::Normal, QIcon::Off);
+    icon.addFile(GUIUtil::getThemeImage(QStringLiteral(":/icons/remove"), QSize(), QIcon::Normal, QIcon::Off);
     destinationDeleteButton->setIcon(icon);
     destinationDeleteButton->setAutoDefault(false);
     connect(destinationDeleteButton, SIGNAL(clicked()), this, SLOT(deleteFrame()));
@@ -1018,7 +1018,6 @@ void MultisigDialog::on_addPrivKeyButton_clicked()
     QPushButton* keyDeleteButton = new QPushButton(keyFrame);
     keyDeleteButton->setObjectName(QStringLiteral("keyDeleteButton"));
     QIcon icon;
-    //icon.addFile(QStringLiteral(":/icons/remove"), QSize(), QIcon::Normal, QIcon::Off);
     icon.addFile(GUIUtil::getThemeImage(QStringLiteral(":/icons/remove")), QSize(), QIcon::Normal, QIcon::Off);
 	keyDeleteButton->setIcon(icon);
     keyDeleteButton->setAutoDefault(false);
