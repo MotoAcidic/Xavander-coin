@@ -22,7 +22,6 @@
 #include "guiutil.h"
 #include "qvalidatedlineedit.h"
 #include "bitcoinamountfield.h"
-#include "guiutil.h"
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QHBoxLayout>
@@ -789,7 +788,7 @@ bool MultisigDialog::createRedeemScript(int m, vector<string> vKeys, CScript& re
 void MultisigDialog::on_addAddressButton_clicked()
 {
     //max addresses 15
-    QString theme = GUIUtil::getThemeName();
+    
     if(ui->addressList->count() > 14){
         ui->addMultisigStatus->setStyleSheet("QLabel { color: red; }");
         ui->addMultisigStatus->setText(tr("Maximum possible addresses reached. (16)"));
@@ -867,7 +866,7 @@ void MultisigDialog::on_pushButtonCoinControl_clicked()
 
 void MultisigDialog::on_addInputButton_clicked()
 {
-    QString theme = GUIUtil::getThemeName();
+    
     if(isFirstRawTx){
         isFirstRawTx = false;
         ui->txInputsScrollArea->show();
@@ -931,7 +930,7 @@ void MultisigDialog::on_addInputButton_clicked()
 
 void MultisigDialog::on_addDestinationButton_clicked()
 {
-    QString theme = GUIUtil::getThemeName();
+    
     QFrame* destinationFrame = new QFrame(ui->destinationsScrollAreaContents);
     destinationFrame->setObjectName(QStringLiteral("destinationFrame"));
     destinationFrame->setFrameShape(QFrame::StyledPanel);
@@ -1014,7 +1013,7 @@ void MultisigDialog::on_addPrivKeyButton_clicked()
     key->setObjectName(QStringLiteral("key"));
     key->setEchoMode(QLineEdit::Password);
     keyLayout->addWidget(key);
-    QString theme = GUIUtil::getThemeName();
+    
     QPushButton* keyDeleteButton = new QPushButton(keyFrame);
     keyDeleteButton->setObjectName(QStringLiteral("keyDeleteButton"));
     QIcon icon;
