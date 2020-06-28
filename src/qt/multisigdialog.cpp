@@ -36,6 +36,16 @@ MultisigDialog::MultisigDialog(QWidget* parent) : QDialog(parent),
                                                   model(0)
 {
     ui->setupUi(this);
+
+	ui->addAddressButton->setIcon(QIcon(GUIUtil::getThemeImage(":/icons/add")));
+    ui->addMultisigButton->setIcon(QIcon(GUIUtil::getThemeImage(":/icons/filesave")));
+    ui->importAddressButton->setIcon(QIcon(GUIUtil::getThemeImage(":/icons/receiving_addresses")));
+    ui->addDestinationButton->setIcon(QIcon(GUIUtil::getThemeImage(":/icons/add")));
+    ui->createButton->setIcon(QIcon(GUIUtil::getThemeImage(":/icons/export")));
+    ui->signButton->setIcon(QIcon(GUIUtil::getThemeImage(":/icons/edit")));
+    ui->commitButton->setIcon(QIcon(GUIUtil::getThemeImage(":/icons/send")));
+    ui->addPrivKeyButton->setIcon(QIcon(GUIUtil::getThemeImage(":/icons/add")));
+
     multisigTx = CMutableTransaction();
 
     //flag to show keyScrollArea on first priv key added
