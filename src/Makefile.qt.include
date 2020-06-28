@@ -190,7 +190,7 @@ BITCOIN_QT_H = \
   qt/zxavandercontroldialog.h
 
 RES_ICONS = \
-  qt/res/icons/default/add.png \
+  qt/res/icons/default/add.png \ 
   qt/res/icons/default/address-book.png \
   qt/res/icons/bitcoin.ico \
   qt/res/icons/bitcoin.png \
@@ -246,7 +246,61 @@ RES_ICONS = \
   qt/res/icons/default/unit_uxavander.png \
   qt/res/icons/default/unit_txavander.png \
   qt/res/icons/default/unit_tmxavander.png \
-  qt/res/icons/default/unit_tuxavander.png
+  qt/res/icons/default/unit_tuxavander.png \
+
+  qt/res/icons/puzzle/add.png \ 
+  qt/res/icons/puzzle/address-book.png \
+  qt/res/icons/puzzle/browse.png \
+  qt/res/icons/puzzle/clock1.png \
+  qt/res/icons/puzzle/clock2.png \
+  qt/res/icons/puzzle/clock3.png \
+  qt/res/icons/puzzle/clock4.png \
+  qt/res/icons/puzzle/clock5.png \
+  qt/res/icons/puzzle/configure.png \
+  qt/res/icons/puzzle/connect0_16.png \
+  qt/res/icons/puzzle/connect1_16.png \
+  qt/res/icons/puzzle/connect2_16.png \
+  qt/res/icons/puzzle/connect3_16.png \
+  qt/res/icons/puzzle/connect4_16.png \
+  qt/res/icons/puzzle/debugwindow.png \
+  qt/res/icons/puzzle/edit.png \
+  qt/res/icons/puzzle/editcopy.png \
+  qt/res/icons/puzzle/editpaste.png \
+  qt/res/icons/puzzle/explorer.png \
+  qt/res/icons/puzzle/export.png \
+  qt/res/icons/puzzle/eye.png \
+  qt/res/icons/puzzle/eye_minus.png \
+  qt/res/icons/puzzle/eye_plus.png \
+  qt/res/icons/puzzle/filesave.png \
+  qt/res/icons/puzzle/history.png \
+  qt/res/icons/puzzle/key.png \
+  qt/res/icons/puzzle/lock_closed.png \
+  qt/res/icons/puzzle/lock_open.png \
+  qt/res/icons/puzzle/masternodes.png \
+  qt/res/icons/puzzle/overview.png \
+  qt/res/icons/puzzle/qrcode.png \
+  qt/res/icons/puzzle/quit.png \
+  qt/res/icons/puzzle/receive.png \
+  qt/res/icons/puzzle/privacy.png \
+  qt/res/icons/puzzle/remove.png \
+  qt/res/icons/puzzle/send.png \
+  qt/res/icons/puzzle/staking_active.png \
+  qt/res/icons/puzzle/staking_inactive.png \
+  qt/res/icons/puzzle/synced.png \
+  qt/res/icons/puzzle/trade.png \
+  qt/res/icons/puzzle/transaction0.png \
+  qt/res/icons/puzzle/transaction2.png \
+  qt/res/icons/puzzle/transaction_conflicted.png \
+  qt/res/icons/puzzle/tx_inout.png \
+  qt/res/icons/puzzle/tx_input.png \
+  qt/res/icons/puzzle/tx_output.png \
+  qt/res/icons/puzzle/tx_mined.png \
+  qt/res/icons/puzzle/unit_xavander.png \
+  qt/res/icons/puzzle/unit_mxavander.png \
+  qt/res/icons/puzzle/unit_uxavander.png \
+  qt/res/icons/puzzle/unit_txavander.png \
+  qt/res/icons/puzzle/unit_tmxavander.png \
+  qt/res/icons/puzzle/unit_tuxavander.png
 
 BITCOIN_QT_CPP = \
   qt/bitcoinaddressvalidator.cpp \
@@ -325,10 +379,25 @@ RES_IMAGES = \
   qt/res/images/default/qtreeview_selected.png \
   qt/res/images/default/walletFrame.png \
   qt/res/images/default/walletFrame_bg.png \
-  qt/res/images/default/walletFrame_bg.png
+  qt/res/images/default/walletFrame_bg.png\
+
+  qt/res/images/puzzle/about.png \
+  qt/res/images/puzzle/splash.png \
+  qt/res/images/puzzle/splash_testnet.png \
+  qt/res/images/puzzle/xavander_logo_horizontal.png \
+  qt/res/images/puzzle/downArrow.png \
+  qt/res/images/puzzle/downArrow_small.png \
+  qt/res/images/puzzle/upArrow_small.png \
+  qt/res/images/puzzle/leftArrow_small.png \
+  qt/res/images/puzzle/rightArrow_small.png \
+  qt/res/images/puzzle/qtreeview_selected.png \
+  qt/res/images/puzzle/walletFrame.png \
+  qt/res/images/puzzle/walletFrame_bg.png \
+  qt/res/images/puzzle/walletFrame_bg.png
 
 RES_CSS = \
-  qt/res/css/default.css
+  qt/res/css/default.css \
+  qt/res/css/puzzle.css
 
 RES_MOVIES = $(wildcard $(srcdir)/qt/res/movies/spinner-*.png)
 
