@@ -984,7 +984,7 @@ void MultisigDialog::on_addDestinationButton_clicked()
 
 void MultisigDialog::on_addPrivKeyButton_clicked()
 {
-    QString theme = GUIUtil::getThemeName();
+    
     if(isFirstPrivKey){//on first click the scroll area must show
         isFirstPrivKey = false;
         ui->keyScrollArea->show();
@@ -1014,12 +1014,13 @@ void MultisigDialog::on_addPrivKeyButton_clicked()
     key->setObjectName(QStringLiteral("key"));
     key->setEchoMode(QLineEdit::Password);
     keyLayout->addWidget(key);
-
+    QString theme = GUIUtil::getThemeName();
     QPushButton* keyDeleteButton = new QPushButton(keyFrame);
     keyDeleteButton->setObjectName(QStringLiteral("keyDeleteButton"));
     QIcon icon;
-    icon.addFile(QStringLiteral(":/icons/" + theme + "/remove"), QSize(), QIcon::Normal, QIcon::Off);
-    keyDeleteButton->setIcon(icon);
+    //icon.addFile(QStringLiteral(":/icons/remove"), QSize(), QIcon::Normal, QIcon::Off);
+    icon.addFile(GUIUtil::getThemeImage(QStringLiteral(":/icons/remove")), QSize(), QIcon::Normal, QIcon::Off);
+	keyDeleteButton->setIcon(icon);
     keyDeleteButton->setAutoDefault(false);
     connect(keyDeleteButton, SIGNAL(clicked()), this, SLOT(deleteFrame()));
     keyLayout->addWidget(keyDeleteButton);
