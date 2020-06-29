@@ -289,7 +289,7 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
 
     //QString theme = GUIUtil::getThemeImage();
     //overviewAction = new QAction(QIcon(":/icons/" + theme + "/overview"), tr("&Overview"), this);
-    overviewAction = new QAction(QIcon(GUIUtil::getThemeImage(":/icons/overview"), tr("&Overview"), this);
+    overviewAction = new QAction(QIcon(GUIUtil::getThemeImage(":/icons/overview")), "", this);
 	overviewAction->setStatusTip(tr("Show general overview of wallet"));
     overviewAction->setToolTip(overviewAction->statusTip());
     overviewAction->setCheckable(true);
