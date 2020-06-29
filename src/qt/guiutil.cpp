@@ -807,20 +807,31 @@ void restoreWindowGeometry(const QString& strSetting, const QSize& defaultSize, 
     parent->move(pos);
 }
 
-// Return name of current UI-theme or default theme if no theme was found
-QString getThemeName()
+// Check whether a theme is not build-in
+bool isExternal(QString theme)
+{
+    if (theme.isEmpty())
+        return false;
+
+    if (theme.operator==("default") || theme.operator==("dark") || theme.operator==("puzzle"))
+        return false;
+
+    //    return (theme.operator!=("default"));
+    return true;
+}
+
+QString getThemeImage(QString image)
 {
     QSettings settings;
-    QString theme = settings.value("theme", "").toString();
+    QString theme = settings.value("theme", "puzzle").toString();
 
-	if (theme.operator==("default")) {
-        return QString theme = settings.value("theme", "default").toString();
-    } else if (theme.operator==("puzzle")) {
-            return QString theme = settings.value("theme", "puzzle").toString();
+    if (theme.operator==("puzzle")) {
+        return image.insert(image.lastIndexOf(QString("/")), QString("_puzzle"));
+    } else if (theme.operator==("dark")) {
+        return image.insert(image.lastIndexOf(QString("/")), QString("_dark"));
     } else {
-            return QString("default");
+        return image;
     }
-
 }
 
 // Open CSS when configured
@@ -829,13 +840,22 @@ QString loadStyleSheet()
     QString styleSheet;
     QSettings settings;
     QString cssName;
-    QString theme = settings.value("theme", "default").toString();
+    QString theme = settings.value("theme", "puzzle").toString();
 
-    if (!theme.isEmpty()) {
-        cssName = QString(":/css/") + theme;
+    if (isExternal(theme)) {
+        // External CSS
+        settings.setValue("fCSSexternal", true);
+        boost::filesystem::path pathAddr = GetDataDir() / "themes/";
+        cssName = pathAddr.string().c_str() + theme + "/css/theme.css";
     } else {
-        cssName = QString(":/css/default");
-        settings.setValue("theme", "default");
+        // Build-in CSS
+        settings.setValue("fCSSexternal", false);
+        if (!theme.isEmpty()) {
+            cssName = QString(":/css/") + theme;
+        } else {
+            cssName = QString(":/css/default");
+            settings.setValue("theme", "default");
+        }
     }
 
     QFile qFile(cssName);

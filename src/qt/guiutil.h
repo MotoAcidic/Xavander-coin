@@ -16,6 +16,10 @@
 #include <QTableView>
 #include <QTableWidget>
 
+#include <QLayout>
+#include <QRect>
+#include <QStyle>
+
 #include <boost/filesystem.hpp>
 
 class QValidatedLineEdit;
@@ -198,8 +202,9 @@ void restoreWindowGeometry(const QString& strSetting, const QSize& defaultSizeIn
 /** Load global CSS theme */
 QString loadStyleSheet();
 
-    /** Return name of current CSS theme */
-QString getThemeName();
+/** Check whether a theme is not build-in */
+bool isExternal(QString theme);
+QString getThemeImage(QString image);
 
 /* Convert QString to OS specific boost path through UTF-8 */
 boost::filesystem::path qstringToBoostPath(const QString& path);

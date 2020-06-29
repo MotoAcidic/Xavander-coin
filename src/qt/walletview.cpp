@@ -40,7 +40,7 @@ WalletView::WalletView(QWidget* parent) : QStackedWidget(parent),
                                           clientModel(0),
                                           walletModel(0)
 {
-    QString theme = GUIUtil::getThemeName();
+    QString theme = GUIUtil::getThemeImage();
     // Create tabs
     overviewPage = new OverviewPage();
     explorerWindow = new BlockExplorer(this);

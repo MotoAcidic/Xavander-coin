@@ -60,7 +60,7 @@ NetworkStyle::NetworkStyle(const QString& appName, const int iconColorHueShift, 
     // Allow for separate UI settings for testnets
     QApplication::setApplicationName(appName);
     // Grab theme from settings
-    QString theme = GUIUtil::getThemeName();
+    QString theme = GUIUtil::getThemeImage();
     // load pixmap
     QPixmap appIconPixmap(":/icons/bitcoin");
     QPixmap splashImagePixmap(":/images/" + theme + "/splash");
